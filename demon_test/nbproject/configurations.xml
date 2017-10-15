@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <logicalFolder name="f6" displayName="callPython" projectFiles="true">
+        <itemPath>callPython.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="ChangeGray" projectFiles="true">
+        <itemPath>ChangeGray.h</itemPath>
+        <itemPath>ChangeGrayClass.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="cornerDetection" projectFiles="true">
+        <itemPath>cornerDetection.h</itemPath>
+        <itemPath>cornerDetectionClass.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="GeroetryH" projectFiles="true">
+        <itemPath>GeroetryMouse.h</itemPath>
+        <itemPath>imageFindCorner.h</itemPath>
+        <itemPath>imageFindCornerClass.h</itemPath>
+        <itemPath>imageFindLine.h</itemPath>
+        <itemPath>imageFindLineClass.h</itemPath>
+        <itemPath>imageGeroetry.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="imageSmoothnessToolH" projectFiles="true">
+        <itemPath>imageNoiseClass.h</itemPath>
+        <itemPath>imageSamplingClass.h</itemPath>
+        <itemPath>imageSmoothness.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="marginDtection" projectFiles="true">
+        <itemPath>marginFunctor.h</itemPath>
+        <itemPath>marginFunctorClass.h</itemPath>
+        <itemPath>marginGeometryClass.h</itemPath>
+        <itemPath>marginShapeClass.h</itemPath>
+      </logicalFolder>
+      <itemPath>dataStruct.h</itemPath>
+      <itemPath>demarcate.h</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/feaPoint.h</itemPath>
+      <itemPath>histImage.h</itemPath>
+      <itemPath>histImageClass.h</itemPath>
+      <itemPath>histImageOperate.h</itemPath>
+      <itemPath>imagedealwith.h</itemPath>
+      <itemPath>imagedealwithclass.h</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/man.h</itemPath>
+      <itemPath>pthreadLock.h</itemPath>
+      <itemPath>showAndWebStorageClass.h</itemPath>
+      <itemPath>showStorageClass.h</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/template.h</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/templateMatching.h</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/theClass.h</itemPath>
+      <itemPath>webStructClass.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <logicalFolder name="f6" displayName="callPython" projectFiles="true">
+        <itemPath>callPython.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="ChangeGray" projectFiles="true">
+        <itemPath>ChangeGray.cpp</itemPath>
+        <itemPath>ChangeGrayClass.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="cornerDetection" projectFiles="true">
+        <itemPath>cornerDetection.cpp</itemPath>
+        <itemPath>cornerDetectionClass.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Geroetry" projectFiles="true">
+        <itemPath>GeroetryMouse.cpp</itemPath>
+        <itemPath>imageFindCorner.cpp</itemPath>
+        <itemPath>imageFindCornerClass.cpp</itemPath>
+        <itemPath>imageFindLine.cpp</itemPath>
+        <itemPath>imageFindLineClass.cpp</itemPath>
+        <itemPath>imageGeroetry.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="imageSmoothnessTool" projectFiles="true">
+        <itemPath>imageNoiseClass.cpp</itemPath>
+        <itemPath>imageSamplingClass.cpp</itemPath>
+        <itemPath>imageSmoothness.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="marginDtection" projectFiles="true">
+        <itemPath>marginFunctor.cpp</itemPath>
+        <itemPath>marginFunctorClass.cpp</itemPath>
+        <itemPath>marginGeometryClass.cpp</itemPath>
+        <itemPath>marginShapeClass.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>demarcate.cpp</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/feaPoint.cpp</itemPath>
+      <itemPath>histImage.cpp</itemPath>
+      <itemPath>histImageClass.cpp</itemPath>
+      <itemPath>histImageOperate.cpp</itemPath>
+      <itemPath>imagedealwith.cpp</itemPath>
+      <itemPath>imagedealwithclass.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>pthreadLock.cpp</itemPath>
+      <itemPath>showAndWebStorageClass.cpp</itemPath>
+      <itemPath>showStorageClass.cpp</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/template.cpp</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/templateMatching.cpp</itemPath>
+      <itemPath>/home/aqq/NetBeansProjects/demon_test/theClass.cpp</itemPath>
+      <itemPath>webStructClass.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>/home/aqq/NetBeansProjects/demon_test/Python/helloworld.py</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/home/aqq/NetBeansProjects/demon_test/Python</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>D:/python/include</pElem>
+            <pElem>E:/betterway/opencv/build/include</pElem>
+            <pElem>E:/betterway/opencv/build/include/opencv</pElem>
+            <pElem>E:/betterway/opencv/build/include/opencv2</pElem>
+          </incDir>
+          <incFile>
+            <pElem>/usr/include/pthread.h</pElem>
+          </incFile>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/demon_test</output>
+          <linkerLibItems>
+            <linkerLibLibItem>pthread-2.19</linkerLibLibItem>
+            <linkerLibLibItem>opencv_calib3d248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_contrib248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_core248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_features2d248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_flann248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_gpu248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_legacy248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ml248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_nonfree248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ocl248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_photo248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_stitching248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_superres248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ts248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_video248d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_videostab248d</linkerLibLibItem>
+            <linkerLibLibItem>_bsddb</linkerLibLibItem>
+            <linkerLibLibItem>_ctypes</linkerLibLibItem>
+            <linkerLibLibItem>_ctypes_test</linkerLibLibItem>
+            <linkerLibLibItem>_elementtree</linkerLibLibItem>
+            <linkerLibLibItem>_hashlib</linkerLibLibItem>
+            <linkerLibLibItem>_msi</linkerLibLibItem>
+            <linkerLibLibItem>_multiprocessing</linkerLibLibItem>
+            <linkerLibLibItem>_socket</linkerLibLibItem>
+            <linkerLibLibItem>_sqlite3</linkerLibLibItem>
+            <linkerLibLibItem>_ssl</linkerLibLibItem>
+            <linkerLibLibItem>_testcapi</linkerLibLibItem>
+            <linkerLibLibItem>_tkinter</linkerLibLibItem>
+            <linkerLibLibItem>bz2</linkerLibLibItem>
+            <linkerLibLibItem>python27</linkerLibLibItem>
+            <linkerLibLibItem>pyexpat</linkerLibLibItem>
+            <linkerLibLibItem>python27</linkerLibLibItem>
+            <linkerLibLibItem>select</linkerLibLibItem>
+            <linkerLibLibItem>unicodedata</linkerLibLibItem>
+            <linkerLibLibItem>winsound</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="/home/aqq/NetBeansProjects/demon_test/Python/helloworld.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/feaPoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/feaPoint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/man.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/templateMatching.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/templateMatching.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/theClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/theClass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ChangeGray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChangeGray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ChangeGrayClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChangeGrayClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GeroetryMouse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GeroetryMouse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="callPython.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="callPython.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cornerDetection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cornerDetection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cornerDetectionClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cornerDetectionClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dataStruct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="demarcate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="demarcate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImageOperate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImageOperate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindCorner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindCorner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindCornerClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindCornerClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindLineClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindLineClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageGeroetry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageGeroetry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageNoiseClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageNoiseClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageSamplingClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageSamplingClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageSmoothness.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageSmoothness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imagedealwith.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imagedealwith.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imagedealwithclass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imagedealwithclass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginFunctorClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctorClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginGeometryClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginGeometryClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginShapeClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginShapeClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pthreadLock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pthreadLock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showAndWebStorageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="showAndWebStorageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showStorageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="showStorageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="webStructClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="webStructClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="/home/aqq/NetBeansProjects/demon_test/Python/helloworld.py"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/feaPoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/feaPoint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/man.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/templateMatching.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/templateMatching.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/theClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/aqq/NetBeansProjects/demon_test/theClass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ChangeGray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChangeGray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ChangeGrayClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChangeGrayClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GeroetryMouse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GeroetryMouse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="callPython.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="callPython.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cornerDetection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cornerDetection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cornerDetectionClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cornerDetectionClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dataStruct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="demarcate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="demarcate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="histImageOperate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="histImageOperate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindCorner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindCorner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindCornerClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindCornerClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageFindLineClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageFindLineClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageGeroetry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageGeroetry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageNoiseClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageNoiseClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageSamplingClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageSamplingClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imageSmoothness.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imageSmoothness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imagedealwith.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imagedealwith.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="imagedealwithclass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="imagedealwithclass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginFunctorClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginFunctorClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginGeometryClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginGeometryClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marginShapeClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="marginShapeClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pthreadLock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pthreadLock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showAndWebStorageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="showAndWebStorageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showStorageClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="showStorageClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="webStructClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="webStructClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

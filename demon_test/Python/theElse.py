@@ -1,0 +1,195 @@
+# -*- coding: utf-8 -*-
+import cv2  
+import numpy as np  
+from matplotlib import pyplot as plt
+import sys
+def copy_simon():
+  img = cv2.imread("/home/aqq/NetBeansProjects/demon_test/png/image22.png")  
+  im3 = img.copy()
+
+  gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+  blur = cv2.GaussianBlur(gray,(5,5),0)
+  thresh = cv2.adaptiveThreshold(blur,255,1,1,11,2)
+
+  #################      Now finding Contours         ###################
+
+  contours,hierarchy= cv2.findContours(thresh,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+ # contours,hierarchy = cv2.drawContours(img,contours,-1,(0,0,255),3)  
+  samples =  np.empty((0,100))
+  responses = []
+  keys = [i for i in range(48,58)]
+  print("contours",contours)
+"""
+  for cnt in contours:
+    if cv2.contourArea(cnt)>255:
+        [x,y,w,h] = cv2.boundingRect(cnt)
+
+        if  h>28:
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
+            roi = thresh[y:y+h,x:x+w]
+            roismall = cv2.resize(roi,(10,10))
+            cv2.imshow('norm',img)
+            key = cv2.waitKey(0)
+
+            if key == 27:  # (escape to quit)
+                sys.exit()
+            elif key in keys:
+                responses.append(int(chr(key)))
+                sample = roismall.reshape((1,100))
+                samples = np.append(samples,sample,0)
+
+  responses = np.array(responses,np.float32)
+  responses = responses.reshape((responses.size,1))
+  print ("training complete")
+
+  np.savetxt('generalsamples.data',samples)
+  np.savetxt('generalresponses.data',responses)
+"""
+
+def hull_simon():
+  img = cv2.imread("/home/aqq/NetBeansProjects/demon_test/png/image22.png")
+  img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+  ret, thresh = cv2.threshold(img_gray, 127, 255,0)
+  contours,hierarchy = cv2.findContours(thresh,2,1)
+  cnt = contours[0]
+  hull = cv2.convexHull(cnt,returnPoints = False)
+  defects = cv2.convexityDefects(cnt,hull)
+  for i in range(defects.shape[0]):
+    s,e,f,d = defects[i,0]
+    start = tuple(cnt[s][0])
+    end = tuple(cnt[e][0])
+    far = tuple(cnt[f][0])
+    cv2.line(img,start,end,[0,255,0],2)
+    cv2.circle(img,far,5,[0,0,255],-1)
+  cv2.imshow('img',img)
+  cv2.waitKey(0)
+  cv2.destroyAllWindows()
+def cvtColor_simon():
+  img = cv2.imread("/home/aqq/NetBeansProjects/demon_test/png/image22.png")  
+  emptyImage = np.zeros(img.shape, np.uint8)  
+
+  emptyImage2 = img.copy()  
+  
+  emptyImage3=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  
+  #emptyImage3[...]=0  
+  
+  cv2.imshow("EmptyImage", emptyImage)  
+  cv2.imshow("Image", img)  
+  #cv2.imshow("EmptyImage2", emptyImage2)  
+  cv2.imshow("EmptyImage3", emptyImage3)  
+  cv2.waitKey (0)  
+  cv2.destroyAllWindows()  
+  print ("qwe")
+
+def sift_simon():
+  img = cv2.imread('/home/aqq/NetBeansProjects/demon_test/png/image22.png')
+  gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+  sift = cv2.xfeatures2d.SIFT_create()
+  keypoints = sift.detect(gray,None)
+  """
+  img=cv2.drawKeypoints(gray,kp)
+
+  #cv2.imwrite('sift_keypoints.jpg',img)
+  #img=cv2.drawKeypoints(gray,kp,flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+  cv2.imshow('choujin.jpg',img)
+ """
+#kp, des = sift.detectAndCompute(gray,None)  #des是描述子，for match， should use des, bf = cv2.BFMatcher();smatches = bf.knnMatch(des1,des2, k=2
+  cv2.drawKeypoints(gray, keypoints, img)
+  img=cv2.drawKeypoints(gray,keypoints,img,flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+  cv2.imshow('testSift', img)
+
+  cv2.waitKey(0)
+  #cv2.destroyAllWindows()
+def calcAndDrawHist(image, color):    
+        hist= cv2.calcHist([image], [0], None, [256], [0.0,255.0])    
+        minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(hist)    
+        print("minval",minVal,maxVal,minLoc,maxLoc)
+        histImg = np.zeros([256,256,3], np.uint8)    
+        hpt = int(0.9* 256);    
+            
+        for h in range(256):    
+            intensity = int(hist[h]*hpt/maxVal)    
+            cv2.line(histImg,(h,256), (h,256-intensity), color)    
+                
+        return histImg;   
+def plt_simon():
+  BLUE=[255,0,0]
+  img1=cv2.imread("image22.jpg")
+  replicate = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_REPLICATE)
+  reflect = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_REFLECT)
+  reflect101 = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_REFLECT_101)
+  wrap = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_WRAP)
+  constant= cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_CONSTANT,value=BLUE)
+  plt.subplot(231),plt.imshow(img1,'gray'),plt.title('ORIGINAL')
+  plt.subplot(232),plt.imshow(replicate,'gray'),plt.title('REPLICATE')
+  plt.subplot(233),plt.imshow(reflect,'gray'),plt.title('REFLECT')
+  plt.subplot(234),plt.imshow(reflect101,'gray'),plt.title('REFLECT_101')
+  plt.subplot(235),plt.imshow(wrap,'gray'),plt.title('WRAP')
+  plt.subplot(236),plt.imshow(constant,'gray'),plt.title('CONSTANT')
+  plt.show()
+def erode_simon():
+  img = cv2.imread("/home/aqq/NetBeansProjects/demon_test/png/image22.png")
+  kernel = np.ones((5,5),np.uint8)
+ # print("kernel",kernel)
+#  erosion = cv2.erode(img,kernel,iterations = 1)
+ # dilation = cv2.dilate(erosion,kernel,iterations = 1)
+  #imgUP = cv2.pyrUp(img)
+  #imshow("imgIp",imgUp)
+ # print(cv2.getStructuringElement(cv2.MORPH_RECT,(5,5)))
+  imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+#  thresh = imgray
+  #cv2.threshold(thresh,thresh,127,255,0)
+  ret,thresh = cv2.threshold(imgray,127,255,0)
+  contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+  cnt = contours[0]
+  M = cv2.moments(cnt)
+  epsilon = 0.1*cv2.arcLength(cnt,True)
+  approx = cv2.approxPolyDP(cnt,epsilon,True)
+  print(approx)
+  print (M)
+  color = ('b','g','r')
+# 对一个列表或数组既要遍历索引又要遍历元素时
+# 使用内置enumerrate 函数会有更加直接，优美的做法
+#enumerate 会将数组或列表组成一个索引序列。
+# 使我们再获取索引和索引内容的时候更加方便
+  for i,col in enumerate(color):
+    histr = cv2.calcHist([img],[i],None,[256],[0,256])
+    plt.plot(histr,color = col)
+    plt.xlim([0,256])
+  plt.show()
+  #plt.hist(img.ravel(),256,[0,256]);
+  #plt.show()
+ # hist = cv2.calcHist([img],[0],None,[256],[0,256])
+  #hist,bins = np.histogram(img.ravel(),256,[0,256])
+#  cv2.imshow("bins",hist)
+ # print("ret,hierarchy",ret,hierarchy)    
+  cv2.imshow("image",image)   
+  cv2.imshow("thresh",thresh)                                  
+  edges = cv2.Canny(img,100,200)
+  cv2.imshow("imgcanny",edges)
+ # cv2.imshow("erosion",dilation)
+  cv2.imshow("img",img)
+  cv2.waitKey(0)
+if __name__ == '__main__':  
+      #  flags=[i for in dir(cv2) if i startswith("COLOR_")]
+      #  print (flags) 
+      #  copy_simon()
+       # sift_simon()
+        erode_simon()
+     #  hull_simon()
+"""
+        img = cv2.imread("image22.jpg")    
+        b, g, r = cv2.split(img)    
+        
+        histImgB = calcAndDrawHist(b, [255, 0, 0])    
+        histImgG = calcAndDrawHist(g, [0, 255, 0])    
+        histImgR = calcAndDrawHist(r, [0, 0, 255])    
+        plt_simon()    
+        cv2.imshow("histImgB", histImgB)    
+        cv2.imshow("histImgG", histImgG)    
+        cv2.imshow("histImgR", histImgR)    
+        cv2.imshow("Img", img)    
+        cv2.waitKey(0)    
+        cv2.destroyAllWindows()   
+ """ 
+        
